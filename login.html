@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do</title>
+  <link rel="icon" href="/website.png">
+  <link rel="stylesheet" href="default.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>To Do App</h1>
+      <!-- <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"> -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <button onclick="login()">Login</button>
+        <p hidden id="errorMessage" class="errorMessage"></p>
+        <p>Don't have an account? <a onclick="gotosignup()">Register</a></p>
+    </div>
+  </div>
+</body>
+<script src="default.js"></script>
+</html>

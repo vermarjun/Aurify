@@ -1,0 +1,71 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #000000;
+  color: #c9f3eaf3;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  box-shadow: 10px 10px 200px rgba(53, 196, 218, 0.252);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.053);
+  color: rgba(232, 239, 240, 0.964);
+}
+
+button {
+  background-color: rgba(7, 131, 125, 0.648);
+  color: rgba(231, 244, 246, 0.964);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #55d1d367;
+}
+
+p {
+  margin-top: 20px;
+}
+
+a {
+  cursor: pointer;
+  color: rgba(53, 196, 218, 0.964);
+  text-decoration: none;
+}
+.errorMessage{
+  color: rgb(235, 12, 12);
+}

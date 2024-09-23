@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="/website.png">
+    <link rel="stylesheet" href="/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body onload="render()">
+    <div class="header">
+        <div class="accountInfo">
+            <img class="pfp" src="/pfp.jpg" alt="">
+            <span id="username">Arjun</span>
+            <span id="useraura">0</span>
+        </div>
+        <div class="headertext">
+            <p class="text">TO DO APP</p>
+        </div>
+        <div class="btncontainer">
+            <button onclick="logout()" class="logout">Logout</button>
+        </div>
+    </div>
+    <div class="content">
+
+        <div class="todosContainer">
+            <div class="todos">
+                <div class="tasksHeading">
+                    <h1>Tasks</h1>
+                </div>
+                <div class="createTodo">
+                    <input id="todoinpt" width="400px" class="createTodoInput" placeholder=" Add New Task" type="text">
+                    <button onclick="addtodo()" id="createtodobtn" class="createTodobtn">Create</button>
+                </div>
+                <div class="alltodos" id="alltodos">
+                    <!-- <div class="todo">
+                        <input class="checkbox" type="checkbox" name="" id="">
+                        <span>Go to gym</span>
+                    </div> -->
+                </div>
+            </div>
+          </div>
+
+          <div class="leaderBoardContainer">
+            <div id="leaderBoard" class="leaderBoard">
+                <div class="tasksHeading">
+                    <h1>Leader Board</h1>
+                </div>
+                <div class="headrow">
+                  <span>Rank</span>
+                  <span>Name</span>
+                  <span>Aura</span>
+                </div>
+                <div id="rows">
+                    <div class="row">
+                        <span>1</span>
+                        <span>Arjun Verma</span>
+                        <span>100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/home.js"></script>
+</html>
