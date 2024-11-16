@@ -21,7 +21,7 @@ try {
 catch(error){
     console.log(error);
 }
-// MIDDLEWARES:
+// MIDDLEWARES::
 app.use(express.json());
 app.use(express.static('public'))
 function jwtToken(ObjectId){
