@@ -2,15 +2,18 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
-const JWT_SECRET = "";
 const path = require("path")
 const zod = require("zod")
 const  {UserModel, TodoModel} = require("./db")
 const app = express();
 
+require('dotenv').config()
+const mongoPassword = process.env.mongoPassword;
+const JWT_SECRET = process.env.jwt_secret;
+
 // SETUP DATABASE
 async function connectDB() {
-    await mongoose.connect("");
+    await mongoose.connect(mongoPassword);
 }
 try {
     connectDB();
